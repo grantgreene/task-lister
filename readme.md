@@ -42,7 +42,7 @@ The tasks are saved to local storage, so as long as your local storage is preser
 ## Demo
 
 Link below to working Demo  
-[Task Lister](http://www.google.com)
+[Task Lister](https://grantgreene.github.io/task-lister/)
 
 ---
 
