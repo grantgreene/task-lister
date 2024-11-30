@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Task Lister</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="alert">
+        <span></span>
+      </div>
+      <header>
+        <div class="top-pane">
+          <div class="top-pane__logo">
+            <a href="/"><img src="img/task-lister-logo.svg" alt="Task Lister Logo" /></a>
+          </div>
+          <button class="top-pane__btn">+</button>
+        </div>
+        <div class="add-task-pane">
+          <input type="text" placeholder="Add a task..." class="add-task-pane__name-input" />
+          <input type="date" class="add-task-pane__date-input" />
+          <button class="add-task-pane__btn">Add Task</button>
+        </div>
+      </header>
+    </div>
+    <section class="filter">
+      <div>
+        <label>Seach Tasks:</label>
+        <input type="text" placeholder="Search tasks..." class="search-tasks-input" />
+      </div>
+      <div>
+        <label>Filter Category:</label>
+        <select class="filter-category">
+          <option value="show all" selected="selected">Show All</option>
+          <option value="to-do">To-Do</option>
+          <option value="in progress">In Progress</option>
+          <option value="waiting">Waiting</option>
+          <option value="completed">Completed</option>
+        </select>
+      </div>
+      <div>
+        <label>Sort by Date:</label>
+        <button class="date-sort date-asc">Jan→Dec</button>
+        <button class="date-sort date-desc">Dec→Jan</button>
+      </div>
+    </section>
+    <div class="no-tasks">No Tasks to Show!</div>
+    <section class="tasks"></section>
+    <section class="update-status-overlay">
+      <div class="update-status-box">
+        <span class="update-status-box__close">x</span>
+        <h1 class="update-status-box__title">Update Status To:</h1>
+        <p class="update-status-box__option">To-Do</p>
+        <p class="update-status-box__option">In Progress</p>
+        <p class="update-status-box__option">Waiting</p>
+        <p class="update-status-box__option">Completed</p>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-logo">
+          <a href="http://www.github.com/grantgreene" target="_blank"><img src="img/gg-logo.svg" alt="Grant Greene Logo" /></a>
+        </div>
+        <p>Task Lister was built Grant Greene.</p>
+        <div class="footer-github">
+          <a href="http://www.github.com/grantgreene" target="_blank"><i class="fa-brands fa-github"></i> <span>github.com/grantgreene</span></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
